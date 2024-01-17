@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+
+</head>
+<body>
+    <header>
+        <p class="title">Katik</p> <p class="alias"> - </p><p class="alias"> Kalkulator Matematik</p>
+    </header>
+    <div class="main-content">
+        <h2>Selamat datang di Katik</h2>
+        <p>Hai Sobat, Selamat datang di Katik :]</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <div class="squareButton">Persegi</div>
+        <div class="longSquareButton">Persegi Panjang</div>
+
+        <div class="squareSection">
+            <div class="squareHeader">
+                <p class="squareTitle">Luas Persegi</p>
+            </div>
+            <div class="squareContent">
+                <img src="assets/persegi.jpg" alt="Persegi" >
+                <p>Bujur sangkar</p>
+                <div class="squareFormula">
+                    <p>Rumus Luas Persegi: L = S x S</p>
+                    <p> Dimana:</p>
+                    <p> L = luas</p>
+                    <p> S = sisi</p>
+
+                </div>
+                <div>
+                    <p class="countSquareTitle">Hitung Luas Persegi</p>
+                    <input  id="squareSisi" placeholder="Masukkan nilai sisi" type="number"><br/>
+                    <button class="count" onClick="hitungLuas()">Hitung</button>
+                    <button class="reset" onClick="resetLuas()">Reset</button>
+                    <p id="outputLuas" class="output"></p>
+
+                </div>
+                
+                
+
+            </div>
+
+        </div>
+        
+        <div class="squareSection">
+            <div class="squareHeader">
+                <p class="squareTitle">Keliling Persegi</p>
+            </div>
+            <div class="squareContent">
+                <img src="assets/persegi.jpg" alt="Persegi" >
+                <p>Bujur sangkar</p>
+                <div class="squareFormula">
+                    <p>Rumus Keliling Persegi: K = 4 x S</p>
+                    <p> Dimana:</p>
+                    <p> K = Keliling</p>
+                    <p> S = sisi</p>
+
+                </div>
+                <div>
+                    <p class="countSquareTitle">Hitung Keliling Persegi</p>
+                    <input  id="squareSisi2" placeholder="Masukkan nilai sisi" type="number"><br/>
+                    <button class="count" onClick="hitungKeliling()">Hitung</button>
+                    <button class="reset" onClick="resetKeliling()">Reset</button>
+                    <p id="outputKeliling" class="output"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+   
+   
+</body>
+</html>
